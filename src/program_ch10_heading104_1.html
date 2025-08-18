@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <link rel= "stylesheet"href= "resume.css">
+  <style>
+.newsletter-signup input:invalid,
+.newsletter-signup textarea:invalid {
+  border: 2px solid #e74c3c; /* Red border for errors */  background-color: #fff0f0;
+}
+
+.newsletter-signup input:valid,
+.newsletter-signup textarea:valid {
+  border: 2px solid #27ae60; /* Green border when valid */  background-color: #f0fff0;
+}
+
+.newsletter-signup input:focus,
+.newsletter-signup textarea:focus {
+  outline: none;
+  border-color: #2980b9; /* Blue border on focus */  background-color: #eaf6ff;
+}
+
+.newsletter-signup label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.newsletter-signup button {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.newsletter-signup button:hover {
+  background-color: #3498db;
+}
+
+
+
+  </style>
+</head>
+<body>
+<form class= "newsletter-signup"autocomplete= "on">
+  <label for= "name">Name:</label>
+  <input type= "text"id= "name"name= "name"required minlength= "2"maxlength= "30"placeholder= "Your Name">
+
+  <label for= "email">Email:</label>
+  <input type= "email"id= "email"name= "email"required placeholder= "you@example.com">
+
+  <label for= "message">Message (optional):</label>
+  <textarea id= "message"name= "message"maxlength= "150"placeholder= "Say hello! (max 150 characters)"></textarea>
+
+  <button type= "submit">Subscribe</button>
+</form>
+
+</body>
+</html>

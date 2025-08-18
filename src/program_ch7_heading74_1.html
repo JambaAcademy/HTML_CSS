@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <title>My Stylish Resume</title>
+  <link rel= "stylesheet"href= "resume.css">
+  <style>
+  @import url( 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700&display=swap');
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #262a33;
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem 1rem;
+  border-bottom: 4px solid #3ac569;
+}
+
+h1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.job-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: #3ac569;
+  letter-spacing: 1px;
+}
+
+.contact-info {
+  font-size: 1rem;
+  margin-top: 0.7rem;
+  opacity: 0.85;
+}
+section {
+  max-width: 700px;
+  margin: 2.5rem auto;
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #262a33;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-left: 5px solid #3ac569;
+  padding-left: 0.8rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #e9ffd9 0%, #fff 100%);
+}
+.job h3 {
+  font-size: 1.15rem;
+  margin: 0.5rem 0 0.1rem 0;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.job h3 span {
+  font-size: 1rem;
+  color: #3ac569;
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.date {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 0.4rem;
+  font-style: italic;
+}
+
+.job ul {
+  margin-top: 0.1rem;
+  margin-bottom: 1.2rem;
+  padding-left: 1.4rem;
+  color: #222;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  background: #e9ffd9;
+  color: #262a33;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(58,197,105,0.09);
+  margin-bottom: 0.6rem;
+}
+@media (max-width: 600px) {
+  section {
+    padding: 1.2rem 0.7rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+    padding-left: 0.4rem;
+  }
+
+  .skills ul {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jordan Lee</h1>
+    <p class= "job-title">Front-End Web Developer</p>
+    <p class= "contact-info">jordan.lee@email.com | (555) 123-4567 | Seattle, WA</p>
+  </header>
+  <section class= "summary">
+    <h2>Profile</h2>
+    <p>Creative developer with a passion for building beautiful, user-friendly web experiences. Skilled in HTML, CSS, and modern web technologies.</p>
+  </section>
+  <section class= "experience">
+    <h2>Experience</h2>
+    <div class= "job">
+      <h3>Web Developer <span>@ PixelWorks Studio</span></h3>
+      <p class= "date">March 2022 – Present</p>
+      <ul>
+        <li>Designed and launched responsive websites for global clients.</li>
+        <li>Collaborated with designers to implement modern UI trends.</li>
+      </ul>
+    </div>
+    <div class= "job">
+      <h3>Junior Developer <span>@ CodeLab</span></h3>
+      <p class= "date">June 2020 – Feb 2022</p>
+      <ul>
+        <li>Maintained and updated e-commerce platforms.</li>
+        <li>Assisted with cross-browser compatibility testing.</li>
+      </ul>
+    </div>
+  </section>
+  <section class= "education">
+    <h2>Education</h2>
+    <p>B.S. in Computer Science, University of Washington (2020)</p>
+  </section>
+  <section class= "skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>Responsive Design</li>
+      <li>JavaScript Basics</li>
+      <li>Version Control (Git)</li>
+    </ul>
+  </section>
+</body>
+</html>

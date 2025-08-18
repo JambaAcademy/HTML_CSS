@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <link rel= "stylesheet"href= "resume.css">
+  <style>
+input[type= "checkbox"] {
+  margin-right: 0.5em;
+}
+select {
+  margin-top: 0.25em;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+
+
+  </style>
+</head>
+<body>
+<form>
+  <fieldset>
+    <legend>Profile Info</legend>
+    <label for= "displayName">Display Name:</label>
+    <input type= "text"id= "displayName"name= "displayName"/>
+    <label for= "bio">Short Bio:</label>
+    <input type= "text"id= "bio"name= "bio"/>
+  </fieldset>
+  <fieldset>
+    <legend>Preferences</legend>
+    <label for= "newsletter">
+      <input type= "checkbox"id= "newsletter"name= "newsletter"/>
+      Receive monthly updates
+    </label>
+    <label for= "theme">Site Theme:</label>
+    <select id= "theme"name= "theme">
+      <option value= "light">Light</option>
+      <option value= "dark">Dark</option>
+    </select>
+  </fieldset>
+</form>
+</body>
+</html>

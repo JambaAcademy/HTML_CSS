@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <title>Contact Us</title>
+  <link rel= "stylesheet"href= "styles.css">
+  <style>
+.blog-layout {
+  display: flex;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.left-nav,
+.sidebar-right {
+  flex: 1;
+  background: #eef2f6;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.blog-main {
+  flex: 2.5;
+  background: #fff;
+  padding: 24px;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+
+
+</style>
+</head>
+<body>
+<div class= "blog-layout">
+  <nav class= "left-nav">
+    <ul>
+      <li><a href= "#">Home</a></li>
+      <li><a href= "#">Categories</a></li>
+      <li><a href= "#">About</a></li>
+    </ul>
+  </nav>
+  <main class= "blog-main">
+    <h1>Latest Articles</h1>
+    <article>
+      <h2>How to Start Coding</h2>
+      <p>Tips and resources for beginners learning web development.</p>
+    </article>
+    <!-- Add more articles here -->  </main>
+  <aside class= "sidebar-right">
+    <h3>Trending Topics</h3>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>Responsive Design</li>
+      <li>JavaScript Basics</li>
+    </ul>
+  </aside>
+</div>
+
+</body>
+</html>

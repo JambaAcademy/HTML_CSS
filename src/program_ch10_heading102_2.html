@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <link rel= "stylesheet"href= "resume.css">
+  <style>
+form p {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+input[type= "radio"] {
+  accent-color: #0077cc;
+  margin-right: 6px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+<form>
+  <p>Choose a delivery method:</p>
+  <label>
+    <input type= "radio"name= "delivery"value= "standard"checked>
+    Standard Shipping
+  </label>
+  <label>
+    <input type= "radio"name= "delivery"value= "express">
+    Express Delivery
+  </label>
+  <label>
+    <input type= "radio"name= "delivery"value= "pickup">
+    In-Store Pickup
+  </label>
+</form>
+</body>
+</html>

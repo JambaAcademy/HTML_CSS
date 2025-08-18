@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <title>Contact Us</title>
+  <link rel= "stylesheet"href= "styles.css">
+  <style>
+.page-content {
+  padding: 40px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  display: none; /* Hidden by default */  z-index: 10;
+}
+
+.modal-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  display: none; /* Hidden by default */  z-index: 20; /* Higher than overlay */}
+
+</style>
+</head>
+<body>
+<div class= "page-content">
+  <h2>Welcome to Our Store!</h2>
+  <button id= "show-modal">Show Product Details</button>
+</div>
+<div class= "modal-overlay"></div>
+<div class= "modal-window">
+  <h3>Product Details</h3>
+  <p>High-quality headphones with rich sound and deep bass.</p>
+  <button id= "close-modal">Close</button>
+</div>
+
+
+</body>
+</html>

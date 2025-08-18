@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <link rel= "stylesheet"href= "resume.css">
+  <style>
+input[type= "checkbox"] {
+  accent-color: #28a745;
+  margin-right: 8px;
+}
+
+form p {
+  font-size: 1.1rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+
+
+  </style>
+</head>
+<body>
+<form>
+  <label for= "role">Registering as:</label>
+  <select id= "role"name= "role">
+    <option value= "">--Select your role--</option>
+    <option value= "student">Student</option>
+    <option value= "teacher">Teacher</option>
+    <option value= "professional">Professional</option>
+  </select>
+
+  <p>Preferred session:</p>
+  <label>
+    <input type= "radio"name= "session"value= "morning"checked>
+    Morning
+  </label>
+  <label>
+    <input type= "radio"name= "session"value= "afternoon">
+    Afternoon
+  </label>
+
+  <p>Topics of Interest:</p>
+  <label>
+    <input type= "checkbox"name= "interest"value= "html">
+    HTML Basics
+  </label>
+  <label>
+    <input type= "checkbox"name= "interest"value= "css">
+    CSS Design
+  </label>
+  <label>
+    <input type= "checkbox"name= "interest"value= "js">
+    JavaScript Essentials
+  </label>
+</form>
+</body>
+</html>

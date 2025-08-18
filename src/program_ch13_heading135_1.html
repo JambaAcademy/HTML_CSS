@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <title>Magazine Homepage Example</title>
+  <link rel= "stylesheet"href= "styles.css">
+  <style>
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f6f6;
+  color: #222;
+}
+
+.site-header, .site-footer {
+  background: #212121;
+  color: #fff;
+  padding: 1em 2em;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.site-header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5em;
+}
+
+.site-header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* The main grid container */.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 2em;
+  padding: 2em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Featured article spans full width */.featured-article {
+  grid-column: 1 / 3;
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.featured-article img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+/* Secondary stories in a grid */.secondary-stories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5em;
+}
+
+.secondary-stories article {
+  background: #fff;
+  padding: 1em;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.secondary-stories img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+}
+
+/* Sidebar styles */.sidebar {
+  background: #fafafa;
+  padding: 1em;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.sidebar h4 {
+  margin-top: 0;
+}
+
+/* Footer styles */.site-footer {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 3em;
+}
+
+  </style>
+</head>
+<body>
+  <header class= "site-header">
+    <h1>Modern Magazine</h1>
+    <nav>
+      <ul>
+        <li><a href= "#">Home</a></li>
+        <li><a href= "#">Features</a></li>
+        <li><a href= "#">Culture</a></li>
+        <li><a href= "#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class= "grid-container">
+    <section class= "featured-article">
+      <img src= "featured.jpg"alt= "Featured Story">
+      <h2>Reimagining Creativity in the Digital Age</h2>
+      <p>Explore how emerging artists are transforming the web’s visual landscape.</p>
+    </section>
+
+    <section class= "secondary-stories">
+      <article>
+        <img src= "images/story1.jpg"alt= "Story 1">
+        <h3>Design Trends 2024</h3>
+        <p>This year’s biggest web design inspirations from around the globe.</p>
+      </article>
+      <article>
+        <img src= "images/story2.jpg"alt= "Story 2">
+        <h3>Interview: Rising Star</h3>
+        <p>Meet the young coder making waves in the creative tech scene.</p>
+      </article>
+      <article>
+        <img src= "images/story3.jpg"alt= "Story 3">
+        <h3>How to Build Your Portfolio</h3>
+        <p>Tips and tricks for showcasing your projects online.</p>
+      </article>
+    </section>
+
+    <aside class= "sidebar">
+      <h4>Editor’s Picks</h4>
+      <ul>
+        <li><a href= "#">Best of 2024</a></li>
+        <li><a href= "#">Web Typography Essentials</a></li>
+        <li><a href= "#">Responsive Design Tricks</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class= "site-footer">
+    <p>&copy; 2024 Modern Magazine | Designed by You</p>
+  </footer>
+</body>
+</html>
+

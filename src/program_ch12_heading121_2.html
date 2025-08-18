@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <title>Flexbox Navigation Example</title>
+  <link rel= "stylesheet"href= "styles.css">
+  <style>
+.blog-list {
+  display: flex; /* Make the section a flex container */  gap: 20px; /* Space between blog posts */  flex-wrap: wrap; /* Allow posts to wrap on small screens */  margin: 30px 0;
+}
+
+.blog-post {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+  flex: 1 1 250px; /* Grow, shrink, and set a base width */  min-width: 200px;
+  max-width: 400px;
+}
+  </style>
+</head>
+<body>
+  <nav class= "navbar">
+    <a href= "#">Home</a>
+    <a href= "#">Portfolio</a>
+    <a href= "#">Blog</a>
+    <a href= "#">Contact</a>
+  </nav>
+  <section class= "blog-list">
+  <article class= "blog-post">
+    <h2>How I Built My First Website</h2>
+    <p>Tips and lessons from my journey as a beginner web developer.</p>
+  </article>
+  <article class= "blog-post">
+    <h2>Understanding CSS Selectors</h2>
+    <p>A beginner-friendly guide to mastering CSS selectors for styling.</p>
+  </article>
+  <article class= "blog-post">
+    <h2>Responsive Design Basics</h2>
+    <p>Learn how to make your site look great on any device.</p>
+  </article>
+</section>
+
+</body>
+</html>
