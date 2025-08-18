@@ -5,6 +5,7 @@ Welcome to the official GitHub repository for *The Smarter Way to Learn HTML & C
 ## About the Book
 
 *The Smarter Way to Learn HTML & CSS* is a dynamic and beginner-friendly guide that transforms novices into confident coders. It offers a practical, engaging approach to mastering HTML and CSS, the foundational languages of the web, empowering you to create stunning, responsive websites from scratch. Perfect for those with no prior coding experience, the book combines clear explanations with hands-on projects to make learning effective and enjoyable. You’ll explore essential concepts like structuring web content with HTML, styling pages with CSS, and crafting user-friendly designs that shine across devices. From building your first webpage to mastering layouts, typography, and responsive design, this guide walks you through each step with real-world examples and exercises. With a focus on modern web development standards, it equips you with the skills and confidence to tackle projects and pursue a career in web design.
+![HTML  CSS](https://github.com/user-attachments/assets/d31f2d11-6d41-432d-b951-fdc4331948b2)
 
 ## Repository Structure
 
