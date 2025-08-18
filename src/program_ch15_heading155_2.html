@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <title>My Global Portfolio</title>
+  <link rel= "stylesheet"href= "styles.css">
+  <style>
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.09);
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+}
+.card h2 {
+  margin-top: 0;
+  color: #0057b7;
+}
+
+  </style>
+</head>
+<body>
+<main>
+  <section class= "card-grid">
+    <article class= "card">
+      <h2>Exploring Japan</h2>
+      <p>Discover the beauty of Japanese gardens and temples in this photo journey.</p>
+    </article>
+    <article class= "card">
+      <h2>French Cuisine</h2>
+      <p>Taste your way through Paris with these authentic French recipes.</p>
+    </article>
+    <article class= "card">
+      <h2>Tech in Brazil</h2>
+      <p>How Brazilian startups are shaping the future of Latin American innovation.</p>
+    </article>
+  </section>
+</main>
+
+</body>
+</html>

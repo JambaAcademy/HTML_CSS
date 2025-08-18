@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <title>My First Blog</title>
+  <link rel= "stylesheet"href= "styles.css">
+  <style>
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 40px;
+}
+
+.product-card {
+  max-width: 350px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+}
+
+.product-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 230px;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0 0 0;
+  color: #222;
+}
+
+.product-info {
+  padding: 18px;
+}
+
+.product-desc {
+  color: #555;
+  font-size: 1em;
+  margin: 10px 0 16px 0;
+}
+
+.features {
+  list-style: disc inside;
+  margin: 0 0 16px 0;
+  padding: 0;
+  color: #444;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 1.4em;
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  background: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.2s;
+}
+
+.add-to-cart:hover {
+  background: #16a085;
+}
+
+  </style>
+  
+</head>
+<body>
+<section class= "product-card">
+  <figure>
+    <img src= "images/sneaker.jpg"alt= "Stylish Running Sneaker"class= "product-image">
+    <figcaption>Comfort Fit Sneaker</figcaption>
+  </figure>
+  <div class= "product-info">
+    <h2>Comfort Fit Sneaker</h2>
+    <p class= "product-desc">Experience all-day comfort with our lightweight, breathable sneakers. Perfect for running, walking, or everyday wear.</p>
+    <ul class= "features">
+      <li>Sizes: 6-12</li>
+      <li>Colors: Black, White, Blue</li>
+      <li>Free shipping</li>
+    </ul>
+    <div class= "price-section">
+      <span class= "price">$49.99</span>
+      <button class= "add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

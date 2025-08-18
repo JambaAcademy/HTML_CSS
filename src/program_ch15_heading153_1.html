@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <title>My First Blog</title>
+  <link rel= "stylesheet"href= "styles.css">
+  <style>
+  body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+  color: #222;
+}
+
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+nav a {
+  color: #ecf0f1;
+  margin: 0 0.75rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+article {
+  background: #fff;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+article h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+article time {
+  color: #888;
+  font-size: 0.92rem;
+}
+
+article a {
+  color: #2980b9;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+footer {
+  background: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsive Design */@media (max-width: 600px) {
+  main {
+    padding: 0 0.5rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  article {
+    padding: 1rem;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h1>My First Blog</h1>
+    <nav>
+      <a href= "#">Home</a>
+      <a href= "#">About</a>
+      <a href= "#">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h2>Welcome to My Blog</h2>
+      <time datetime= "2024-06-10">June 10, 2024</time>
+      <p>This is my very first post! Here, I’ll share coding tips and web development news to help other beginners get started.</p>
+      <a href= "#">Read More</a>
+    </article>
+    <article>
+      <h2>Getting Started with CSS Layouts</h2>
+      <time datetime= "2024-06-08">June 8, 2024</time>
+      <p>Learn how to create flexible layouts with CSS for your own sites. Discover the basics of arranging content and making your pages shine.</p>
+      <a href= "#">Read More</a>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2024 My First Blog</p>
+  </footer>
+</body>
+</html>

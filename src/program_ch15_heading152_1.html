@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <meta name= "viewport"content= "width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <link rel= "stylesheet"href= "styles.css">
+  <style>
+  /* Reset and base styles */* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styles */header {
+  background: linear-gradient(90deg, #67b26f, #4ca2cd);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* About section */#about {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* Projects grid */#projects {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  padding: 1.2rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.project-card:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+.project-card h3 {
+  color: #67b26f;
+}
+
+/* Footer styles */footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #e9ecef;
+  margin-top: auto;
+}
+footer a {
+  color: #4ca2cd;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */@media (max-width: 600px) {
+  header, #about, #projects, footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  #about {
+    margin: 1.2rem auto;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer & Designer</p>
+  </header>
+  <section id= "about">
+    <h2>About Me</h2>
+    <p>Hello! I’m a passionate beginner web developer, eager to build modern, user-friendly websites.</p>
+  </section>
+  <section id= "projects">
+    <h2>Projects</h2>
+    <div class= "project-card">
+      <h3>Responsive Gallery</h3>
+      <p>A photo gallery that adapts beautifully to mobile and desktop screens.</p>
+      <a href= "#">View Project</a>
+    </div>
+    <div class= "project-card">
+      <h3>Simple E-commerce Demo</h3>
+      <p>A mock online store with a clean layout and intuitive navigation.</p>
+      <a href= "#">View Project</a>
+    </div>
+  </section>
+  <footer>
+    <p>Contact me: <a href= "mailto:your.email@example.com">your.email@example.com</a></p>
+  </footer>
+</body>
+</html>

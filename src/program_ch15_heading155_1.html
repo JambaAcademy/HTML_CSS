@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset= "UTF-8">
+  <title>My Global Portfolio</title>
+  <link rel= "stylesheet"href= "styles.css">
+  <style>
+  body {
+  background: #f6f6f6;
+  color: #222;
+  transition: background 0.4s, color 0.4s;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Toggle Switch Styles */.switch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  width: 40px;
+  height: 22px;
+  background: #ccc;
+  border-radius: 12px;
+  position: relative;
+  margin-right: 8px;
+  transition: background 0.4s;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 2px;
+  top: 2px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+input:checked + .slider {
+  background: #222;
+}
+input:checked + .slider::before {
+  transform: translateX(18px);
+}
+input:checked ~ .mode-label {
+  color: #222;
+}
+
+/* Dark mode styles */input:checked ~ body,
+input:checked ~ header {
+  background: #222;
+  color: #f6f6f6;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Maria Gomez - Web Developer</h1>
+    <label class= "switch">
+      <input type= "checkbox"id= "darkToggle">
+      <span class= "slider"></span>
+      <span class= "mode-label">Dark Mode</span>
+    </label>
+  </header>
+</body>
+</html>
